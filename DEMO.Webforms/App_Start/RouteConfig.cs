@@ -14,5 +14,10 @@ namespace DEMO.Webforms
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
         }
+
+        public static void RegisterCustomRoutes(RouteCollection routes)
+        {
+            routes.MapPageRoute("BandById", "Band/{Id}", "~/BandDetails.aspx");
+        }
     }
 }

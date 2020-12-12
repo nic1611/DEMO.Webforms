@@ -15,6 +15,7 @@ namespace DEMO.Webforms
         {
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            RouteConfig.RegisterCustomRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
